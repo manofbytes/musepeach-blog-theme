@@ -1,0 +1,14 @@
+.signup-callout {
+	padding: 4.444em 15px;
+	text-align: center;
+	background: linear-gradient(100.27deg, #FFA25F 0.06%, #F16F96 99.33%);
+
+	p {
+		margin-bottom: rem-calc(30);
+		font-family: $font-secondary;
+		font-size: rem-calc(24);
+		font-weight: 800;
+		color: #FFF;
+	}
+}
+

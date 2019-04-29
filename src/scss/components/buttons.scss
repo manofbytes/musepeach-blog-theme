@@ -1,0 +1,60 @@
+[type="button"],
+[type="reset"],
+[type="submit"],
+button,
+.button {
+	display: inline-block;
+	padding: 0.357em 1.786em;
+	font-size: 0.778em;
+	font-weight: 700;
+	line-height: 2.000em;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	user-select: none;
+	background-color: $orange;
+	border: 1px solid transparent;
+	border-radius: 1.429em;
+	color: #FFF;
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		background: darken($orange, 10%);
+	}
+}
+
+.button--white {
+	color: $orange;
+	background: #FFF;
+
+	&:hover,
+	&:focus {
+		background: #FFF;
+		color: darken($orange, 10%);
+		border-color: darken($orange, 10%);
+	}
+}
+
+.button--green {
+	background: $green;
+
+	&:hover,
+	&:focus {
+		background: darken($green, 10%);
+	}
+}
+
+.button--halo {
+	color: $gray-dark;
+	background: transparent;
+	border-color: $gray-medium;
+
+	&:hover,
+	&:focus {
+		background: transparent;
+		color: $orange;
+		border-color: $orange;
+	}
+}
+

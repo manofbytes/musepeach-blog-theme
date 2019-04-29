@@ -1,0 +1,74 @@
+body {
+	font-family: $font;
+	font-style: normal;
+	font-size: 1.125em;
+	line-height: 1.66667em;
+	color: $gray-dark;
+}
+
+a,
+a:after,
+a:before,
+button,
+button:after,
+button:before,
+.button,
+.button:after,
+.button:before,
+input,
+input:after,
+input:before {
+	transition: all 240ms ease;
+}
+
+button,
+.button {
+	cursor: pointer;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+.button:focus {
+	outline: 2px dotted $gray-medium;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 0.833em 0;
+	font-family: $font-secondary;
+	font-weight: 800;
+	line-height: 1.25;
+}
+
+h2 {
+	font-size: 1.333em;
+}
+
+figure {
+	margin: 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	box-sizing: border-box;
+	padding: 0.357em 1.786em;
+	font-size: 0.778em;
+	line-height: 2em;
+	border-radius: 1.429em;
+	border: 1px solid $green;
+
+	&:hover,
+	&:focus {
+		border-color: darken($green, 10%);
+	}
+}
+
+textarea {
+	padding: 1.786em;
+}
+
+blockquote {
+	margin: 0;
+}

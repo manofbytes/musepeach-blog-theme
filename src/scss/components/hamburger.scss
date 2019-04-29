@@ -1,0 +1,78 @@
+.hamburger {
+	position: absolute;
+	top: 4px;
+	right: 0;
+	display: block;
+	height: 60px;
+	width: 60px;
+	color: $orange;
+	border-color: transparent;
+}
+
+.hamburger span {
+	display: block;
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	right: 20px;
+	height: 2px;
+	background: $orange;
+}
+
+.hamburger span:before,
+.hamburger span:after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: $orange;
+	transition-duration: 260ms, 260ms;
+	transition-delay: 260ms, 0s;
+}
+
+.hamburger span:before {
+	top: -8px;
+	-webkit-transition-property: top, -webkit-transform;
+	transition-property: top, -webkit-transform;
+	transition-property: top, transform;
+	transition-property: top, transform, -webkit-transform;
+	-webkit-transition-property: top, transform;
+}
+
+.hamburger span:after {
+	bottom: -8px;
+	-webkit-transition-property: bottom, -webkit-transform;
+	transition-property: bottom, -webkit-transform;
+	transition-property: bottom, transform;
+	transition-property: bottom, transform, -webkit-transform;
+	-webkit-transition-property: bottom, transform;
+}
+
+.hamburger.hamburger--expanded span {
+	background: none;
+}
+
+.hamburger.hamburger--expanded span:before,
+.hamburger.hamburger--expanded span:after {
+	transition-delay: 0s, 260ms;
+}
+
+.hamburger.hamburger--expanded span:before {
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.hamburger.hamburger--expanded span:after {
+	bottom: 0;
+	transform: rotate(-45deg);
+}
+
+@media(min-width: 800px) {
+
+	.hamburger{
+		display: none;
+	}
+
+}

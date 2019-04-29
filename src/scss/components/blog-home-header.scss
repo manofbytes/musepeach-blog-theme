@@ -1,0 +1,26 @@
+.blog-home-header {
+	position: relative;
+	padding-top: 4.444em;
+	color: #FFF;
+
+	&:before{
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 50vh;
+		background: linear-gradient(100.27deg, #FFA25F 0.06%, #F16F96 99.33%);
+		z-index: -1;
+	}
+
+	h1 {
+		margin-bottom: 2.222em;
+	}
+}
+
+.blog-home-header__inside {
+	max-width: rem-calc(1140);
+	margin: 0 auto;
+}

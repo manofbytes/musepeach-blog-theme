@@ -1,0 +1,21 @@
+@function rem-calc($size) {
+	$remSize: $size / 16;
+	@return #{$remSize}rem;
+}
+
+@mixin transition() {
+	transition: all 240ms ease;
+}
+
+@mixin contain() {
+	max-width: rem-calc(1140);
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+@mixin funcky-heading {
+	background: linear-gradient(to right, #F2764F, #F16161);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	box-decoration-break: clone;
+}

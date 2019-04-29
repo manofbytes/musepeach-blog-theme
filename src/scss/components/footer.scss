@@ -1,0 +1,42 @@
+.footer {
+	padding: 4.444em 15px;
+}
+
+.footer__nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__nav__logo {
+	width: rem-calc(132);
+	margin: 0 auto 2.222em;
+}
+
+.footer__nav__menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0 15px;
+	list-style-type: none;
+	font-size: 0.778em;
+
+	li {
+		margin: 0 rem-calc(15);
+	}
+
+	a {
+		display: block;
+		position: relative;
+		height: rem-calc(30);
+		line-height: rem-calc(30);
+		font-family: $font-secondary;
+		font-weight: 800;
+		text-decoration: none;
+		color: $gray-dark;
+
+		&:hover {
+			color: $orange;
+		}
+	}
+}

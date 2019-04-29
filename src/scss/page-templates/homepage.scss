@@ -1,0 +1,175 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.home-header {
+	margin-bottom: 4.444em;
+	padding: 4.444em 0;
+	background:
+		url(../img/hero_image.png),
+		$gray-light;
+	background-repeat: no-repeat;
+	background-position:
+		top -100px left 60vw,
+		center;
+}
+
+.home-header__inside {
+	@include contain;
+
+	h1 {
+		max-width: 70%;
+
+		@include funcky-heading;
+	}
+
+	p {
+		max-width: 70%;
+
+		&:last-of-type {
+			margin-bottom: 1.66667em;
+		}
+
+	}
+
+	input[type="email"] {
+		width: 100%;
+		margin-bottom: rem-calc(10);
+	}
+}
+
+@media( min-width: 800px ) {
+	.home-header__inside {
+		h1 {
+			max-width: rem-calc(460);
+		}
+
+		p {
+			max-width: rem-calc(575);
+		}
+
+		input[type="email"] {
+			width: 300px;
+			margin-right: -50px;
+			margin-bottom: 0;
+			padding-right: 60px;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+.homepage-pricing {
+	padding: 4.444em 0;
+	margin-bottom: 4.444em;
+	background:
+		url(../img/pattern.png),
+		$gray-light;
+
+	h2 {
+		margin-bottom: 3.333em;
+		text-align: center;
+	}
+}
+
+.homepage-pricing__comparison {
+	max-width: rem-calc(900);
+	margin: 0 auto;
+	padding: 0 15px;
+
+
+	h3 {
+		color: $orange;
+	}
+
+	p {
+		margin-bottom: 1.66667em;
+	}
+
+	> div {
+		margin-bottom: 1.667em;
+		padding: 1.667em;
+		text-align: center;
+		background: #FFF;
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+		border-radius: 6px;
+	}
+}
+
+@media( min-width: 800px ) {
+	.homepage-pricing__comparison{
+		display: flex;
+
+		> div {
+			margin: 0 1.667em;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+# New to journaling
+--------------------------------------------------------------*/
+.about-journaling {
+	@include contain;
+
+	h2,
+	> p {
+		text-align: center;
+	}
+
+	h2 {
+		color: $orange;
+	}
+
+	> p {
+		margin-bottom: 4.444em;
+	}
+
+}
+
+.about-journaling__inside {
+	margin-bottom: 4.444em;
+
+	> div{
+		margin-bottom: 1.667em;
+		padding: 1.667em;
+		background: $gray-light;
+
+		h3 {
+			font-size: 1em;
+		}
+
+		p {
+			font-size: 0.889em;
+			font-style: italic;
+		}
+
+		span {
+			font-size: 0.889em;
+			font-weight: bold;
+		}
+	}
+}
+
+.about-journaling__guide {
+	max-width: rem-calc(600);
+	margin: 0 auto;
+	text-align: center;
+
+	p {
+		font-size: 1.333em;
+		line-height: 1.5;
+	}
+}
+
+@media( min-width: 800px ) {
+	.about-journaling__inside {
+		display: flex;
+		align-items: center;
+		margin: 0 -0.833em 4.444em;
+
+		> div {
+			margin: 0 0.833em;
+		}
+	}
+}

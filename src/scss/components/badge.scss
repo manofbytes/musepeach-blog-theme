@@ -1,0 +1,15 @@
+.badge {
+	display: inline-block;
+	padding: .3em 1em;
+	margin-top: -2px;
+	font-family: $font;
+	font-size: 50%;
+	font-weight: normal;
+	line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	border-radius: 1em;
+	color: #FFF;
+	background: $green;
+}

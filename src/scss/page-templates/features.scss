@@ -1,0 +1,161 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.features-header {
+	height: 50vh;
+	margin-bottom: 4.444em;
+	overflow: hidden;
+	background:
+		url(../img/devices.png),
+		linear-gradient(100.27deg, #FFA25F 0.06%, #F16F96 99.33%);
+	background-repeat: no-repeat;
+	background-position:
+		top 60% left 50vw,
+		center;
+}
+
+.features-header__inside {
+	@include contain;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	color: #FFF;
+
+	h1{
+		margin: 0;
+		max-width: rem-calc(350);
+	}
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+.feature-block {
+	@include contain;
+	margin-bottom: 4.444em;
+}
+
+.feature-block__image {
+	display: flex;
+	justify-content: center;
+	padding: 0 15px;
+	margin-bottom: 1.667em;
+}
+
+.feature-block__content {
+	p {
+		margin: 0;
+	}
+
+	h2 {
+		color: $orange;
+	}
+}
+
+.feature-block--homepage {
+	max-width: rem-calc(930);
+}
+
+@media ( min-width: 800px ) {
+	.feature-block {
+		display: flex;
+		align-items: center;
+
+		> figure,
+		> div {
+			flex-basis: 50%;
+		}
+	}
+
+	.feature-block__image {
+		order: 2;
+		margin-bottom: 0;
+	}
+
+	.feature-block--homepage .feature-block__content {
+		flex-basis: 60%;
+	}
+}
+
+/* ----- */
+.feature-pro {
+	margin-bottom: 4.444em;
+	padding: 4.444em 15px;
+	background: $gray-light;
+	text-align: center;
+}
+
+.feature-pro__inside {
+	max-width: rem-calc(720);
+	margin: 0 auto;
+
+	h2 {
+		color: $orange;
+	}
+
+	p {
+		margin-bottom: 1.667em;
+	}
+}
+
+.feature-pro__grid {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	div {
+		flex-basis: 50%;
+	}
+
+	span {
+		display: block;
+		font-size: 0.778em;
+		font-weight: bold;
+	}
+
+	img {
+		max-width: 60px;
+	}
+}
+
+@media ( min-width: 800px ) {
+	.feature-pro__grid div {
+		flex-basis: 25%;
+	}
+}
+
+/* ----- */
+.features-row {
+	max-width: rem-calc(1170);
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.features-row__block {
+	margin-bottom: 1.667em;
+	text-align: center;
+
+	h2 {
+		font-size: 1.111em;
+		color: $blue;
+	}
+
+	p {
+		font-size: 0.889em;
+	}
+}
+
+@media ( min-width: 800px ) {
+	.features-row {
+		display: flex;
+		padding: 4.444em 15px;
+	}
+
+	.features-row__block {
+		margin-bottom: 0;
+		padding: 0 15px;
+		flex: 1;
+	}
+}
