@@ -29,6 +29,8 @@
 
 		<?php the_content(); ?>
 
+		<script async data-uid="956c91c439" src="https://f.convertkit.com/956c91c439/8bf4c540e6.js"></script><?php // phpcs:ignore ?>
+
 	</section><!-- .entry__content -->
 
 </article><!-- .article -->

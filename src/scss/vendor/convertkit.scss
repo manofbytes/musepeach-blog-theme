@@ -1,0 +1,31 @@
+.formkit-form {
+	margin-bottom: 0;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 6px !important;
+	border: 0 !important;
+
+	&:before {
+		content: "";
+		display: block;
+		height: 5px;
+		width: 100%;
+		background: linear-gradient(100.27deg,#ffa25f .06%,#f16f96 99.33%);
+	}
+}
+
+.formkit-header h1 {
+	font-family: $font-secondary;
+	@include funcky-heading;
+}
+
+.formkit-submit {
+	line-height: 1;
+}
+
+.formkit-guarantee {
+	display: none;
+}
+
+.heateorSssClear {
+	margin: 0;
+}
