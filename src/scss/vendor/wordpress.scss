@@ -1,0 +1,23 @@
+.wp-block-quote {
+	padding: 30px;
+	background: $gray-light;
+	font-style: italic;
+	border-left: 4px solid $orange;
+
+	p {
+		margin-top: 0;
+		margin-bottom: rem-calc(30);
+	}
+}
+
+.wp-block-table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 0.889em;
+
+	td {
+		padding: 5px;
+		border: 1px solid $gray-medium;
+	}
+}

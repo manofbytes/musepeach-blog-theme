@@ -1,0 +1,26 @@
+#cookie-notice{
+	bottom: 20px;
+	background: none !important;
+}
+
+.cookie-notice-container{
+	border: 1px solid #d8d8d8;
+	border-radius: 4px;
+	max-width: 600px;
+	margin: 0 auto;
+	background: #FFF;
+	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+	border-left: 4px solid #e14919;
+}
+
+.cn-button.bootstrap {
+	background-color: #e14919;
+	background-image: none;
+	border: none;
+}
+
+.cn-button.bootstrap:hover {
+	background: #ea6b43;
+	background-image: none;
+	border: none;
+}

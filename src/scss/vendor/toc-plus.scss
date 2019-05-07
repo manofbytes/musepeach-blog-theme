@@ -1,0 +1,33 @@
+// Starting with the white base theme
+
+#toc_container {
+	display: block;
+	padding: 20px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+	border: 0;
+}
+
+#toc_container p.toc_title {
+	text-align: left;
+	color: $orange;
+	font-size: .8em;
+	text-transform: uppercase;
+}
+
+#toc_container li {
+	line-height: 2em;
+}
+
+#toc_container a {
+	font-weight: bold;
+	color: $gray-dark;
+	border-bottom: 1px solid transparent;
+}
+
+#toc_container a:hover {
+	text-decoration: none;
+	border-bottom-color: darken($orange, 10%);
+	border-bottom-width: 3px;
+}
